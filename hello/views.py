@@ -32,7 +32,7 @@ def get_weather(city):
 
 class HelloView(View):
     def get(self, request):
-        visitor_name = request.GET.get('visitor_name', 'Visitor')
+        visitor_name = request.GET.get('visitor_name', 'Harry')
         client_ip = get_client_ip(request)
         geolocation = get_geolocation(client_ip)
 
